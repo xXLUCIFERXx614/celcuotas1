@@ -1,0 +1,254 @@
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SHOP</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+<body>
+
+    
+    <!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´  INICIO HEADER ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+
+    <header class="header theme-sky-dark in-line" id="header">
+
+        <!-- inicia marca del header -->
+
+        <div class="in-line">
+            <a href="index.html">
+                <img class="branding-logo"
+                     src="images/logoCelcuotas.png"
+                     alt="logotipo de celcuotas"
+                     aria-hidden="true" />
+            </a>
+            <p class="branding" aria-label="Bienvenido a nuestra tienda on-line:"></p>
+        </div>
+        
+
+        <!-- finaliza marca del header-->
+    <!-- inicia enlaces -->
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="credito.html">CALCULA TU CREDITO</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- finaliza enlaces -->
+
+        <!-- inicia boton cart-->
+
+        <div>
+            <button type="button"
+                    class=" btn-cart in-line button button-simple-empty"
+                    aria-label="Mostrar productos agregados al carrito">
+                <i class="fas fa-shopping-cart cart-icon"
+                   aria-hidden="true"
+                   aria-live="polite"></i>
+                <div class= "cart-text">
+                    <p>Carrito (<span class="cart-qty">0</span>ítems)</p>
+                </div>
+                
+            </button>
+        </div>
+        <!--finaliza boton cart-->
+    </header>
+
+    <!--★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ FIN HEADER ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+
+
+        <!--★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ CONTACTO ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+        <style>
+        body { font-family: Arial, sans-serif; }
+        .contact-container { max-width: 600px; margin: auto; padding: 20px; }
+        .contact-form { display: flex; flex-direction: column; }
+        .contact-form label { margin-top: 10px; }
+        .contact-form input, .contact-form textarea { padding: 10px; margin-top: 5px; }
+        .contact-form button { padding: 10px; margin-top: 20px; background-color: #007bff; color: white; border: none; cursor: pointer; }
+        #map { height: 400px; width: 100%; margin-top: 20px; }
+      </style>
+      <script>
+        function initMap() {
+          var empresa = {lat: -34.397, lng: 150.644}; // Reemplaza con la latitud y longitud de tu empresa
+          var map = new google.maps.Map(document.getElementById('map'), {zoom: 4, center: empresa});
+          var marker = new google.maps.Marker({position: empresa, map: map});
+        }
+      </script>
+      </head>
+      <body>
+      
+      <div class="contact-container">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+        
+        <form class="contact-form">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          
+          <button type="submit">Enviar</button>
+        </form>
+       
+      
+   <!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´  INICIO MENU CARRITO ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+
+   <div class="header-menu-add-to-card theme-sky-dark menu-add-to-card-hidde is-hidden ">
+    <div class="cart-container in-stack">
+        <div class="cart-title-container in-line">
+            <h2>CARRITO</h2>
+            <button type="button" class="btn-close">
+                <i class="far fa-window-close"></i>
+            </button>
+        </div>
+        <div class="cart-full">
+            <div class="in-line">
+                <p><span class="cart-qty">0</span> producto(s) agregado(s)</p>
+            </div>
+            <div class="cart-products-added">
+
+            </div>
+            <div class="subtotal-container in-line">
+                <p> Subtotal $ <span class="cart-subtotal-value">0</span></p>
+            </div>
+            <div class=" add-to-card-buttons in-stack">
+                <button type="button" class="btn-buy  in-line button
+            button-simple-solid-reverse">
+                    COMPRAR
+                </button>
+
+                <button type="button" class="btn-empty-cart in-line button
+            button-simple-empty ">
+                    VACIAR
+                </button>
+            </div>
+        </div>
+        <!--  MENSAGE DE CARRITO VACÍO -->
+        <div class="cart-empty is-hidden">
+            <p class="cart-empty-msg ">
+                No tienes productos en el carrito, ¡Agrega algunos!
+            </p>
+        </div>
+    </div>
+</div>
+<!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´  FIN MENU CARRITO ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+ <!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´  INICIO CONFIRMACION DE COMPRA★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+ <div class="menu-checkout in-stack is-hidden">
+    <h2 class="checkout-title">Checkout</h2>
+    <div class="checkout-container in-line">
+        <div class="form-container">
+            <form>
+                <fieldset class="checkout-info in-stack">
+                    <div class="checkout-personal-info">
+                        <legend class="info-title">Datos Personales</legend>
+                        <div class="checkout-personal-info-inputs ">
+                            <label for="nameAndSurname">
+                                Nombre y apellido *
+                                <input type="text" placeholder="p. ej.: Ada Lovelace" name="Nombre y Apellido"
+                                    required id="nameAndSurname" />
+                            </label>
+                            <label for="email">
+                                Email *
+                                <input type="email" placeholder="p. ej.: ada.lovelace@gmail.com" required
+                                    id="email" />
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <!-- *** [ Comiezo Opciones de Pago ] *** -->
+                <fieldset class="checkout-payment in-stack">
+                    <div class="checkout-section-container in-stack">
+                        <legend class="info-title">Opciones de pago</legend>
+                        <label for="cash-debit">
+                            <input type="radio" class="pay-option" name="payment" value="cash-debit" checked
+                                id="cash-debit" />
+                            Efectivo / Débito
+                            </input>
+                        </label>
+                        <label for="credit">
+                            <input type="radio" class="pay-option" name="payment" value="credit" id="credit" />
+                            Tarjeta de crédito
+                            </input>
+                        </label>
+                        <label for="delivery">
+                            <input type="checkbox" class="pay-option" name="delivery" id="delivery" />
+                            Necesito envío
+                        </label>
+                        <label for="discount">
+                            <input type="checkbox" class="pay-option" name="discount" id="discount" />
+                            Tengo tarjeta de descuento
+                        </label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <!-- *** [ Fin Opciones de Pago ] *** -->
+
+        <!-- *** [ Comienzo Subtotales ] *** -->
+        <div class="cart-totals in-stack">
+            <h3 class="info-title">Resumen</h3>
+            <div>
+                <p class="cart-subtotal">
+                    Subtotal $ <span class="cart-subtotal-value">0</span>
+                </p>
+                <p class="cart-tax is-hidden">
+                    Recargo $<span class="cart-tax-value">0</span>
+                </p>
+                <p class="cart-discount is-hidden">
+                    Descuento 10% $<span class="cart-discount-value">0</span>
+                </p>
+                <p class="cart-delivery is-hidden">
+                    Envío $<span class="cart-delivery-value">0</span>
+                </p>
+                <p class="cart-total">
+                    Total: $ <span class="cart-total-value">0</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- *** [ Fin Subtotales ] *** -->
+
+    <footer class="footer-checkout in-line">
+        <button type="button" class="btn-cancel-buy button button-simple-solid">
+            Seguir comprando
+        </button>
+        <button type="button" class="btn-finish-buy button button-simple-solid-reverse">
+            Finalizar
+        </button>
+    </footer>
+</div>
+
+<!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´  FIN CONFIRMACION DE COMPRA ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+<!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´  INICIO MODAL VACIAR CARRITO ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+
+<div class="modal-empty-cart in-stack is-hidden" aria-role="dialog" aria-modal="true"
+aria-describedby="empty-cart-description" aria-hidden="true">
+
+<p class="modal-message" id="empty-cart-description">
+   Estás por vaciar el carrito, ¿quieres continuar?
+</p>
+<footer class="modal-btn-container">
+   <button type="button" class="button button-simple-solid-reverse cancel-empty-cart-btn">
+       Cancelar
+   </button>
+   <button type="button" class="button button-simple-solid confirm-cart-empty-btn">
+       Vaciar
+   </button>
+</footer>
+</div>
+<div class="overlay is-hidden" id="overlay"></div>
+<!--  ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ FIN MODAL VACIAR CARRITO ★´･ｪ･`★´･ｪ･`★´･ｪ･`★´･ｪ･`★´ -->
+<script src="index.js"></script>
+</body>
